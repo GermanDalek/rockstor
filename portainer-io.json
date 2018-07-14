@@ -1,0 +1,34 @@
+{
+    "portainer.io": {
+        "containers": {
+            "portainer": {
+                "image": "portainer/portainer",
+                "launch_order": 1,
+                "ports": {
+                    "9000": {
+                        "description": "portainer.io WebUI port. Suggested default: 9000",
+                        "host_default": 9000,
+                        "label": "WebUI port",
+                        "protocol": "tcp"
+                    }
+                },
+                "volumes": {
+                    "/data": {
+                        "description": "Choose a share for portainer data. E.g. create a share called portainer-data for this purpose alone.",
+                        "label": "Data Storage",
+                        "min_size": 1073741824
+                    }
+                },
+                "environment": {}
+            }
+        },
+        "description": "portainer.io Docker environment manager",
+        "ui": {
+            "https": true,
+            "slug": ""
+        },
+        "volume_add_support": true,
+        "website": "https://portainer.io/",
+	"version": "1.0"
+    }
+}
