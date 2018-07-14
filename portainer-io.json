@@ -4,6 +4,12 @@
             "portainer": {
                 "image": "portainer/portainer",
                 "launch_order": 1,
+                "opts": [
+                    [
+                        "-v",
+                        "/var/run/docker.sock:/var/run/docker.sock"
+                    ]
+                ],
                 "ports": {
                     "9000": {
                         "description": "portainer.io WebUI port. Suggested default: 9000",
