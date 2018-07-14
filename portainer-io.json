@@ -9,7 +9,8 @@
                         "description": "portainer.io WebUI port. Suggested default: 9000",
                         "host_default": 9000,
                         "label": "WebUI port",
-                        "protocol": "tcp"
+                        "protocol": "tcp",
+                        "ui": true
                     }
                 },
                 "volumes": {
@@ -24,7 +25,7 @@
         },
         "description": "portainer.io Docker environment manager",
         "ui": {
-            "https": true,
+            "https": false,
             "slug": ""
         },
         "volume_add_support": true,
